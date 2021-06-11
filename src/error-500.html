@@ -1,0 +1,17 @@
+{% set title = '405' %}
+{% extends 'layouts/error.html' %}
+{% block content %}
+
+<div class="error-page container">
+    <div class="col-md-8 col-12 offset-md-2">
+        <img alt="Not Found" class="img-error" src="assets/images/samples/error-500.png">
+        <div class="text-center">
+            <h1 class="error-title">System Error</h1>
+            <p class="fs-5 text-gray-600">The website is currently unaivailable. Try again later or contact the
+                developer.</p>
+            <a class="btn btn-lg btn-outline-primary mt-3" href="index.html">Go Home</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

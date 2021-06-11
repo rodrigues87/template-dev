@@ -1,0 +1,224 @@
+{% set title = 'Button' %}
+{% set filename = 'component-button.html' %}
+
+{% extends 'layouts/master.html' %}
+{% block content %}
+<div class="page-heading">
+    <div class="page-title">
+        <div class="row">
+            <div class="col-12 col-md-6 order-md-1 order-last">
+                <h3>Button</h3>
+                <p class="text-subtitle text-muted">Use Bootstrap’s custom button styles for actions in forms, dialogs,
+                    and more with support for multiple sizes, states,
+                    and more.</p>
+            </div>
+            <div class="col-12 col-md-6 order-md-2 order-first">
+                <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li aria-current="page" class="breadcrumb-item active">Button</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section class="section">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Basic Buttons</h4>
+                    </div>
+                    <div class="card-body">
+                        <h6>Default</h6>
+                        <p class="text-muted">Use the <code>.btn .btn-{color}</code> classes.</p>
+                        <div class="buttons">
+                            <a class="btn btn-primary" href="#">Primary</a>
+                            <a class="btn btn-secondary" href="#">Secondary</a>
+                            <a class="btn btn-info" href="#">Info</a>
+                            <a class="btn btn-warning" href="#">Warning</a>
+                            <a class="btn btn-danger" href="#">Danger</a>
+                            <a class="btn btn-success" href="#">Success</a>
+                            <a class="btn btn-light" href="#">Light</a>
+                            <a class="btn btn-dark" href="#">Dark</a>
+                        </div>
+                        <hr>
+                        <h6>Rounded</h6>
+                        <p>Use a class <code>.rounded-pill</code> with <code>.btn</code> class to create round button.
+                        </p>
+                        <div class="buttons">
+                            <a class="btn btn-primary rounded-pill" href="#">Primary</a>
+                            <a class="btn btn-secondary rounded-pill" href="#">Secondary</a>
+                            <a class="btn btn-info rounded-pill" href="#">Info</a>
+                            <a class="btn btn-warning rounded-pill" href="#">Warning</a>
+                            <a class="btn btn-danger rounded-pill" href="#">Danger</a>
+                            <a class="btn btn-success rounded-pill" href="#">Success</a>
+                            <a class="btn btn-light rounded-pill" href="#">Light</a>
+                            <a class="btn btn-dark rounded-pill" href="#">Dark</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Buttons <code>.btn-outline</code></h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">Use the <code>.btn .btn-outline-{color}</code> classes.</p>
+                        <div class="buttons">
+                            <a class="btn btn-outline-primary" href="#">Primary</a>
+                            <a class="btn btn-outline-secondary" href="#">Secondary</a>
+                            <a class="btn btn-outline-info" href="#">Info</a>
+                            <a class="btn btn-outline-warning" href="#">Warning</a>
+                            <a class="btn btn-outline-danger" href="#">Danger</a>
+                            <a class="btn btn-outline-success" href="#">Success</a>
+                            <a class="btn btn-outline-light" href="#">Light</a>
+                            <a class="btn btn-outline-dark" href="#">Dark</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Button Sizes</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">Use the <code>.btn-lg</code> or <code>.btn-sm</code> classes.</p>
+                        <div class="buttons">
+                            <a class="btn btn-sm btn-warning" href="#">Small</a>
+                            <a class="btn btn-danger" href="#">Normal</a>
+                            <a class="btn btn-lg btn-dark" href="#">Large</a>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-sm btn-outline-primary" href="#">Small</a>
+                            <a class="btn btn-outline-primary" href="#">Normal</a>
+                            <a class="btn btn-lg btn-outline-primary" href="#">Large</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Button States</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">Use the <code>.disabled</code> or <code>.btn-progress</code> classes.</p>
+                        <div class="buttons">
+                            <a class="btn btn-primary" href="#">Normal</a>
+                            <a class="btn disabled btn-primary" href="#">Disabled</a>
+                            <a class="btn disabled btn-primary btn-progress" href="#">Progress</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Icon Button</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">Use the <code>.icon</code> and <code>.icon-left</code> classes.</p>
+                        <div class="buttons">
+                            <a class="btn icon icon-left" href="#"><i data-feather="user"></i> Default</a>
+                            <a class="btn icon icon-left btn-primary" href="#"><i data-feather="edit"></i> Primary</a>
+                            <a class="btn icon icon-left btn-secondary" href="#"><i data-feather="user"></i>
+                                Secondary</a>
+                            <a class="btn icon icon-left btn-info" href="#"><i data-feather="info"></i> Info</a>
+                            <a class="btn icon icon-left btn-warning" href="#"><i data-feather="alert-triangle"></i>
+                                Warning</a>
+                            <a class="btn icon icon-left btn-danger" href="#"><i data-feather="alert-circle"></i>
+                                Danger</a>
+                            <a class="btn icon icon-left btn-success" href="#"><i data-feather="check-circle"></i>
+                                Success</a>
+                            <a class="btn icon icon-left btn-light" href="#"><i data-feather="star"></i> Light</a>
+                            <a class="btn icon icon-left btn-dark" href="#"><i data-feather="file"></i> Dark</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Only Icon Button</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">Use the <code>.icon</code> class.</p>
+                        <div class="buttons">
+                            <a class="btn icon btn-primary" href="#"><i data-feather="edit"></i></a>
+                            <a class="btn icon btn-secondary" href="#"><i data-feather="user"></i></a>
+                            <a class="btn icon btn-info" href="#"><i data-feather="info-circle"></i></a>
+                            <a class="btn icon btn-warning" href="#"><i data-feather="exclamation-triangle"></i></a>
+                            <a class="btn icon btn-danger" href="#"><i data-feather="times"></i></a>
+                            <a class="btn icon btn-success" href="#"><i data-feather="check"></i></a>
+                            <a class="btn icon btn-light" href="#"><i data-feather="star"></i></a>
+                            <a class="btn icon btn-dark" href="#"><i data-feather="file"></i></a>
+                        </div>
+                        <p class="text-muted mt-2">Sizes.</p>
+                        <div class="buttons">
+                            <a class="btn icon btn-sm btn-warning" href="#"><i
+                                    data-feather="exclamation-triangle"></i></a>
+                            <a class="btn icon btn-danger" href="#"><i data-feather="times"></i></a>
+                            <a class="btn icon btn-lg btn-success" href="#"><i data-feather="check"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Button Group</h4>
+                    </div>
+                    <div class="card-body">
+                        <div aria-label="Basic example" class="btn-group mb-3" role="group">
+                            <button class="btn btn-secondary" type="button">Left</button>
+                            <button class="btn btn-secondary" type="button">Middle</button>
+                            <button class="btn btn-secondary" type="button">Right</button>
+                        </div>
+                        <div aria-label="Basic example" class="btn-group mb-3" role="group">
+                            <button class="btn btn-danger" type="button">Left</button>
+                            <button class="btn btn-warning" type="button">Middle</button>
+                            <button class="btn btn-success" type="button">Right</button>
+                        </div>
+                        <div aria-label="Basic example" class="btn-group mb-3 btn-group-sm" role="group">
+                            <button class="btn btn-danger" type="button">Left</button>
+                            <button class="btn btn-danger" type="button">Middle</button>
+                            <button class="btn btn-danger" type="button">Right</button>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div aria-label="Basic example" class="btn-group btn-group-lg" role="group">
+                            <button class="btn" type="button">Left</button>
+                            <button class="btn btn-primary" type="button">Middle</button>
+                            <button class="btn" type="button">Right</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Vertical Variation</h4>
+                    </div>
+                    <div class="card-body">
+                        <div aria-label="Basic example" class="btn-group-vertical" role="group">
+                            <button class="btn btn-secondary" type="button">Left</button>
+                            <button class="btn btn-secondary" type="button">Middle</button>
+                            <button class="btn btn-secondary" type="button">Right</button>
+                            <button class="btn btn-secondary" type="button">Justify</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
